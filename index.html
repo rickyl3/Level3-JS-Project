@@ -15,14 +15,14 @@
             <hr />
 
             <div class="inventory">
-                <p>Rock - 5</p>
-                <p>Scissors - 5</p>
-                <p>Paper - 5</p>
-                <img src="Images/rock.jpg" alt="rock">
-                <img src="Images/scissors.png" alt="scissor">
-                <img src="Images/paper.jpg" alt="paper">
+                <p id="playerR">Rock - 5</p>
+                <p id="playerP">Paper - 5</p>
+                <p id="playerS">Scissors - 5</p>
+                <img src="Images/rock.jpg" onclick="playerSelect('rock')" alt="rock">
+                <img src="Images/paper.jpg" onclick="playerSelect('paper')" alt="paper">
+                <img src="Images/scissors.png" onclick="playerSelect('scissors')" alt="scissor">
             </div>
-            <img class="decision" src="Images/questionMark.jpg" alt="Decision player made">
+            <img class="decision" id="playerDecision" src="Images/questionMark.jpg" alt="Decision player made">
         </div>
         <div id="computer">
             <h2>Computer</h2>
@@ -30,16 +30,38 @@
             <hr />
 
             <div class="inventory">
-                <p>Rock - 5</p>
-                <p>Scissors - 5</p>
-                <p>Paper - 5</p>
+                <p id="compR">Rock - 5</p>
+                <p id="compP">Paper - 5</p>
+                <p id="compS">Scissors - 5</p>
                 <img src="Images/rock.jpg" alt="rock">
-                <img src="Images/scissors.png" alt="scissor">
                 <img src="Images/paper.jpg" alt="paper">
+                <img src="Images/scissors.png" alt="scissor">
             </div>
-            <img class="decision" src="Images/questionMark.jpg" alt="Decision player made">
+            <img class="decision" id="compDecision" src="Images/questionMark.jpg" alt="Decision player made">
         </div>
     </div>
+
+    <div id="infoContainer">
+        <div id="rulesContainer">
+            <h4>Rules:</h4>
+            <ul>
+                <ol>Rule 1</ol>
+                <ol>Rule 2</ol>
+            </ul>
+        </div>
+
+        <div id="logContainer">
+            <h4>Log:</h4>
+            <p id="gameLog">
+                test
+            </p>
+        </div>
+        
+        <div id="resetContainer">
+            <button id="resetButton">Reset</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

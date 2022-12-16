@@ -7,11 +7,13 @@
     width: 50%;
     height: 50%;
     border-right: solid black 2px;
+    border-bottom: solid black 2px;
 }
 
 #computer {
     width: 50%;
     height: 50%;
+    border-bottom: solid black 2px;
 }
 
 h2, h3 {
@@ -37,7 +39,35 @@ h2, h3 {
 }
 .decision {
     width: 30%;
+    height: 250px;
     display: block;
     margin: 0 auto;
     border: solid black 2px;
+}
+
+#infoContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#infoContainer div {
+    padding: 10px;
+}
+#rulesContainer h4 {
+    text-align: center;
+}
+#logContainer h4 {
+    text-align: center;
+}
+#logContainer {
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+}
+#resetButton {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+}
+h4 {
+    font-size: 30px;
 }
