@@ -52,11 +52,16 @@ h2, h3 {
 #infoContainer div {
     padding: 10px;
 }
+ol {
+    padding-bottom: 10px;
+}
 #rulesContainer h4 {
     text-align: center;
+    margin: 10px auto;
 }
 #logContainer h4 {
     text-align: center;
+    margin: 10px auto;
 }
 #logContainer {
     border-left: solid black 2px;
@@ -66,7 +71,7 @@ h2, h3 {
     display: block;
     margin: auto;
     width: 50%;
-    height: 50%;
+    height: 200px;
 }
 h4 {
     font-size: 30px;
