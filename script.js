@@ -115,7 +115,7 @@ function playerSelect(hand) {
 
         checkInventory();
         display();
-    }, 500);
+    }, 1100);
 }
 
 function display() {
